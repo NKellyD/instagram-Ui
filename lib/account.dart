@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class UserAccount extends StatelessWidget {
   const UserAccount({super.key});
@@ -12,7 +14,9 @@ class UserAccount extends StatelessWidget {
           children: [
             const Text('Account'),
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Provider.of<ThemeProvider>(context,listen: false).toggleTheme();
+              },
                 child:
                 const Icon(Icons.sunny))
           ],
