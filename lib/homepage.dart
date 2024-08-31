@@ -4,7 +4,7 @@ import 'package:instagram_ui/pages/user_reels.dart';
 import 'package:instagram_ui/pages/user_search.dart';
 import 'package:instagram_ui/pages/user_shop.dart';
 
-import 'account.dart';
+import 'pages/user_account.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
