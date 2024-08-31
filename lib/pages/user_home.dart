@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:instagram_ui/util/bubble_stories.dart';
 import 'package:instagram_ui/util/user_posts.dart';
 
@@ -11,23 +12,24 @@ class UserHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
-        title: const Row(
+        title:  Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('Instagram',style: TextStyle(
-              color: Colors.black,
+              color: Theme.of(context).colorScheme.primary,
             ),),
-            Row(
+             Row(
               children: [
-                Icon(Icons.add),
+                Icon(Icons.add,color: Theme.of(context).colorScheme.primary,),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(Icons.favorite),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.favorite,color: Theme.of(context).colorScheme.primary,),
                 ),
-                Icon(Icons.share)
+                Icon(Icons.share,color: Theme.of(context).colorScheme.primary,)
               ],
             )
 
@@ -36,7 +38,7 @@ class UserHome extends StatelessWidget {
       ),
       body:  Column(
         children: [
-           Container(
+           SizedBox(
              height: 130,
              child: ListView.builder(
                   itemCount: people.length,
@@ -45,7 +47,13 @@ class UserHome extends StatelessWidget {
                 return BubbleStories(text: people[index]);
               }),
            ),
-          const UserPosts(name: 'kroos',),
+          Expanded(
+            child: ListView.builder(
+              itemCount: people.length,
+                itemBuilder: (context,index){
+              return UserPosts(name: people[index]);
+            }),
+          )
 
 
         ],

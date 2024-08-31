@@ -4,6 +4,8 @@ import 'package:instagram_ui/pages/user_reels.dart';
 import 'package:instagram_ui/pages/user_search.dart';
 import 'package:instagram_ui/pages/user_shop.dart';
 
+import 'account.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -23,7 +25,8 @@ void _navBottomBar(int index){
    UserHome(),
    UserReels(),
    UserSearch(),
-   UserShop()
+   UserShop(),
+   const UserAccount()
  ];
 
   @override

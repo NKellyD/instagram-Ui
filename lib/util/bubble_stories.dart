@@ -21,7 +21,7 @@ class _BubbleStoriesState extends State<BubbleStories> {
             width: 60,
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.grey[400]
+                color: Theme.of(context).colorScheme.secondary,
             ),
           ),
           const SizedBox(

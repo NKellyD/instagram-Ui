@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/homepage.dart';
+import 'package:instagram_ui/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-       primarySwatch: Colors.grey
-      ),
+      theme: lightMode,
+      darkTheme: darkMode,
       home: HomePage(),
     );
   }
