@@ -25,7 +25,11 @@ class UserAccount extends StatelessWidget {
                     child: Transform.rotate(angle: -1,
                     child: Icon(Icons.send_rounded,color: Theme.of(context).colorScheme.primary,)),
                   ),
-                  Icon(Icons.menu,color: Theme.of(context).colorScheme.primary,)
+                  InkWell(
+                      onTap: (){
+                        Provider.of<ThemeProvider>(context,listen: false).toggleTheme();
+                      },
+                      child: Icon(Icons.sunny,color: Theme.of(context).colorScheme.primary,))
                 ],
               )
 
