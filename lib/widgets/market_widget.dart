@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Grid extends StatelessWidget {
-  const Grid({super.key});
+class MarketWidget extends StatelessWidget {
+  const MarketWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemCount: 20,
         itemBuilder: (context,index){
           return Padding(

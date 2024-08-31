@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:instagram_ui/widgets/search_grid.dart';
+import 'package:instagram_ui/widgets/search_widget.dart';
 
 class UserSearch extends StatelessWidget {
 
@@ -25,7 +25,7 @@ class UserSearch extends StatelessWidget {
           ),
         ),
       ),
-      body: const Grid(),
+      body: const SearchWidget(),
     );
   }
 }
