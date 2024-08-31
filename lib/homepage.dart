@@ -23,8 +23,8 @@ void _navBottomBar(int index){
 
  final List<Widget> _children =  [
    UserHome(),
-   UserReels(),
    UserSearch(),
+   UserReels(),
    UserShop(),
    const UserAccount()
  ];

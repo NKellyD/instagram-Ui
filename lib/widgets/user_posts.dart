@@ -80,7 +80,7 @@ class UserPosts extends StatelessWidget {
             style: TextStyle(color: Theme.of(context).colorScheme.primary,),
             children: [
               TextSpan(
-                text: 'KD',
+                text: name,
                 style: TextStyle(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary,)
 
               ),

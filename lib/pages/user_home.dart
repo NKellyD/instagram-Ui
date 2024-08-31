@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:instagram_ui/util/bubble_stories.dart';
-import 'package:instagram_ui/util/user_posts.dart';
+
+import '../widgets/bubble_stories.dart';
+import '../widgets/user_posts.dart';
+
 
 class UserHome extends StatelessWidget {
   final List people = ['KD','Pawel','Jo','Mum','Dad','Kate','Owen'];
