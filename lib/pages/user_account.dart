@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:instagram_ui/theme/theme_provider.dart';
+import 'package:instagram_ui/widgets/bubble_stories.dart';
 import 'package:provider/provider.dart';
 
 class UserAccount extends StatelessWidget {
@@ -130,6 +131,16 @@ class UserAccount extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          const SizedBox(height: 10,),
+          const Row(
+            children: [
+              BubbleStories(text: 's1',),
+              BubbleStories(text: 's2',),
+              BubbleStories(text: 's3',),
+              BubbleStories(text: 's4',),
+              BubbleStories(text: 's5',),
+            ],
           )
         ],
       )
