@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:instagram_ui/theme/theme_provider.dart';
@@ -98,16 +99,16 @@ class UserAccount extends StatelessWidget {
                     child: Center(child: Text('Edit profile',style: TextStyle(color: Theme.of(context).colorScheme.primary,),))
                   ),
                 ),
-                const SizedBox(width: 10,),
-                Container(
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.secondary,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0,horizontal: 10),
-                      child: Text('Share profile',style: TextStyle(color: Theme.of(context).colorScheme.primary,),),
-                    )
+
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.secondary,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(child: Text('Share profile',style: TextStyle(color: Theme.of(context).colorScheme.primary,),))
+                  ),
                 ),
                 const SizedBox(width: 10,),
                 Container(
