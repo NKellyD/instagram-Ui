@@ -99,7 +99,6 @@ class UserAccount extends StatelessWidget {
                     child: Center(child: Text('Edit profile',style: TextStyle(color: Theme.of(context).colorScheme.primary,),))
                   ),
                 ),
-
                 Expanded(
                   child: Container(
                     padding: const EdgeInsets.all(8),
@@ -110,16 +109,15 @@ class UserAccount extends StatelessWidget {
                       child: Center(child: Text('Share profile',style: TextStyle(color: Theme.of(context).colorScheme.primary,),))
                   ),
                 ),
-                const SizedBox(width: 10,),
-                Container(
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.secondary,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0,horizontal: 10),
-                      child: Text('send',style: TextStyle(color: Theme.of(context).colorScheme.primary,),),
-                    )
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.secondary,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(child: Text('send',style: TextStyle(color: Theme.of(context).colorScheme.primary,),))
+                  ),
                 ),
               ],
             ),
