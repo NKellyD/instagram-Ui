@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class getTextFormField extends StatelessWidget {
+class pubTextFormField extends StatelessWidget {
 
   TextEditingController controller;
   String hintName;
   IconData? icon;
   bool isObscueText;
   TextInputType inputType;
-  getTextFormField(
+  pubTextFormField(
       {required this.controller,
         required this.hintName,
         this.icon,
