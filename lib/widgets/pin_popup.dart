@@ -19,7 +19,7 @@ class PinPopupWidget extends StatelessWidget {
         child: Container(
           width: 85,
           height: 30,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: [
               Expanded(child: Container()),
@@ -27,24 +27,24 @@ class PinPopupWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(0.0),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 6,
                     ),
                     Text(
                       message,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontFamily: "Calibri",
                         fontSize: 12,
                         color: Color.fromARGB(255, 83, 83, 83),
                         overflow: TextOverflow.clip,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     pubTextFormField(controller: pin, hintName: '',),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                   ],
@@ -60,9 +60,9 @@ class PinPopupWidget extends StatelessWidget {
                     child: Container(
                       alignment: Alignment.center,
                       width: 60,
-                      padding: EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(border: Border.all(color: Colors.white12, width: .75)),
-                      child: Text(
+                      child: const Text(
                         'Annuler',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
@@ -73,10 +73,10 @@ class PinPopupWidget extends StatelessWidget {
                     child: Container(
                       alignment: Alignment.center,
                       width: 60,
-                      padding: EdgeInsets.all(4),
+                      padding: const EdgeInsets.all(4),
                       decoration: BoxDecoration(
                           color: Colors.red, border: Border.all(color: Colors.red, width: .5)),
-                      child: Text(
+                      child: const Text(
                         'Confirmer',
                         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                       ),
